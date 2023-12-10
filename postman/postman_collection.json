@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "a6c858f4-e72d-4d5a-b8f3-ca6f024982e4",
+		"name": "tutoria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27270474"
+	},
+	"item": [
+		{
+			"name": "profesor guardar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipoDocumento\":\"CC\",\r\n    \"numeroDocumento\":\"123456\",\r\n    \"nombre\":\"pepito\",\r\n    \"segundoNombre\":\"carlos\",\r\n    \"apellido\":\"nose\",\r\n    \"segundoApellido\":\"sise\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8030/profesor/guardar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"profesor",
+						"guardar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8030/profesor/eliminar?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"profesor",
+						"eliminar"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8030/profesor/buscarTodos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"profesor",
+						"buscarTodos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipoDocumento\":\"CC\",\r\n    \"numeroDocumento\":\"123456\",\r\n    \"nombre\":\"pepito\",\r\n    \"segundoNombre\":\"carlos\",\r\n    \"apellido\":\"nose\",\r\n    \"segundoApellido\":\"sise\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8030/profesor/actualizar?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"profesor",
+						"actualizar"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
