@@ -12,6 +12,6 @@ public class Test {
 
     @GetMapping("/test")
     public ResponseEntity<String> getTest() {
-        return new ResponseEntity<>("test", HttpStatus.OK);
+        return new ResponseEntity<>("test2", HttpStatus.OK);
     }
 }
